@@ -8,4 +8,7 @@ ENV PORT 5000
 
 COPY scripts/run.sh /
 
-ENTRYPOINT ["/run.sh"]
+WORKDIR /
+RUN chmod +x run.sh
+
+ENTRYPOINT ["./run.sh"]

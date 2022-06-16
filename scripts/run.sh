@@ -21,10 +21,10 @@ while getopts 'm:a:' arg; do
   esac
 done
 
-if [${artifact_store} == '']; then
-  printf "Artifact store URL must be set"
-  exit 1
-fi
+# if [${artifact_store} == '']; then
+#   printf "Artifact store URL must be set"
+#   exit 1
+# fi
 
 if [${metadata_store} == '']; then
   mlflow server \

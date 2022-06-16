@@ -1,3 +1,5 @@
+#!/bin/bash
+
 metadata_store=''
 artifact_store=''
 
